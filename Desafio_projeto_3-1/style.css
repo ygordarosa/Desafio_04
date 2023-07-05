@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, select, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+body{
+  background: #BFD7E4;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 400px;
+  margin: 108px auto 32px;
+}
+
+header h1 {
+  color: #FFF;
+  font-size: 36px;
+  font-family: Staatliches;
+}
+
+header p {
+  color: #FFF;
+font-size: 16px;
+line-height: normal;
+height: 46px;
+}
+
+header img {
+  width: 225px;
+  height: 100px;
+}
+
+
+body::before {
+  content: '';
+
+  width: 100%;
+  height: 465px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  background: #293241;
+}
+
+form{
+  background-color: white;
+
+  padding: 30px 64px 64px;
+  margin-bottom: 392px;
+
+  border-radius: 0 0 20px 20px;
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.before  {
+  width: 750px;
+  height: 133px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  border-radius: 20px 20px 0 0;
+  background: #F67669;
+}
+
+.before h3 {
+  margin: 50px 275px;
+
+  color: #FFF;
+  font-size: 24px;
+  font-family: Staatliches;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+
+fieldset{
+  border: none;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.input-name-surname {
+  display: flex;
+  flex-direction: row;
+  
+
+
+  gap: 22px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-name-surname .input-wrapper {
+  width: 100%;
+}
+
+ label {
+  color: #4E4958;
+  font-size: 14px;
+  line-height: 24px;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  color: #C1BCCC;
+  font-size: 12px;
+  line-height: 20px;
+
+  margin-left: 9px;
+}
+
+.input-wrapper input , select, textarea{
+  height: 55px;
+
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 10px;
+
+  background: #FAFAFC;
+}
+
+fieldset legend {
+  padding-top: 30px;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e6e6f0;
+  
+  text-align: center;
+  color: #253B51;
+  font-size: 24px;
+  font-family: Staatliches;
+  line-height: 34px;
+
+  width: 100%;
+}
+
+
+
+.input-wrapper select {
+width: 300px;
+
+appearance: none;
+
+
+margin-bottom: 30px;
+
+background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+background-repeat: no-repeat;
+background-position: right 10px top 50%; 
+}
+
+
+.input-wrapper textarea {
+  height: 165px;
+
+  margin-bottom: 30px;
+}
+
+fieldset legend + div label   {
+  margin-top: 30px;
+}
+
+.input-check {
+  position: relative;
+ 
+}
+
+.input-check label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-check input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+ 
+  opacity: 0;
+ }
+
+ .input-check label::before {
+content:'';
+width: 24px;
+height: 24px;
+display: block;
+
+border: 1px solid #E6E6F0;
+border-radius: 8px;
+ }
+
+ .input-check input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1804_14)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1804_14'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.input-check input:focus + label::before {
+  border: 2px solid black;
+}
+
+
+
+.scheduling {
+  display: flex;
+  margin-bottom: 63px;
+}
+
+.times {
+  display: flex;
+}
+
+
+
+.dates   input {
+  width: 300px;
+  margin-right: 32px ;
+}
+
+.times input {
+  width: 140px;
+  margin-right: 10px;
+}
+
+.submit {
+  width: 100%;
+  height: 51px;
+}
+
+.submit input {
+  width: 100%;
+  height: 51px;
+
+  border: none;
+  border-radius: 8px;
+  background: #F67669;
+
+  color: #FFF;
+  font-size: 20px;
+  font-family: Staatliches;
+  line-height: 26px;
+
+  justify-content: center;
+}
+
+
+.submit input:hover {
+  background: #f54c39;
+
+}
+
+input:invalid {
+  border: 1px solid #b81818;
+}
